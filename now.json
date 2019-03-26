@@ -1,1 +1,11 @@
-{}
+{
+  "version": 2,
+  "name": "storybook-example",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": "public" }
+    }
+  ]
+}

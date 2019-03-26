@@ -3,29 +3,44 @@
   "private": true,
   "description": "A simple starter to get up and developing quickly with StoryBook",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Santiago Molina Orozco <santiagomolina@justbit.site>",
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.2.5",
     "gatsby-image": "^2.0.34",
     "gatsby-plugin-manifest": "^2.0.24",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.10",
     "gatsby-plugin-sharp": "^2.0.30",
+    "gatsby-plugin-styled-components": "^3.0.7",
     "gatsby-source-filesystem": "^2.0.27",
     "gatsby-transformer-sharp": "^2.1.17",
     "prop-types": "^15.7.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-helmet": "^5.2.0"
+    "react-helmet": "^5.2.0",
+    "react-redux": "^6.0.1",
+    "redux": "^4.0.1",
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
-    "prettier": "^1.16.4",
-    "@storybook/react": "^5.0.5",
-    "@storybook/addon-actions": "^5.0.5",
-    "@storybook/addon-links": "^5.0.5",
-    "@storybook/addons": "^5.0.5",
     "@babel/core": "^7.4.0",
-    "babel-loader": "^8.0.5"
+    "@storybook/addon-actions": "^5.0.5",
+    "@storybook/addon-knobs": "^5.0.5",
+    "@storybook/addon-links": "^5.0.5",
+    "@storybook/addon-storyshots": "^5.0.5",
+    "@storybook/addon-viewport": "^5.0.5",
+    "@storybook/addons": "^5.0.5",
+    "@storybook/react": "^5.0.5",
+    "babel-jest": "^24.5.0",
+    "babel-loader": "^8.0.5",
+    "babel-preset-gatsby": "^0.1.10",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.5.0",
+    "prettier": "^1.16.4",
+    "react-test-renderer": "^16.8.5",
+    "require-context.macro": "^1.0.4",
+    "standard": "^12.0.1"
   },
   "keywords": [],
   "license": "MIT",
@@ -35,16 +50,20 @@
     "format": "prettier --write src/**/*.{js,jsx}",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "now-build": "npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/SantiagoMolinaOrozco/StoryBook-Example"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/SantiagoMolinaOrozco/StoryBook-Example/issues"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
   }
 }
