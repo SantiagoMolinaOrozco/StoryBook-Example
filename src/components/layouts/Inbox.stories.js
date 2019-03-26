@@ -3,8 +3,8 @@ import { storiesOf } from '@storybook/react'
 import { action } from '@storybook/addon-actions'
 import { Provider } from 'react-redux'
 
-import { PureInboxScreen } from './InboxScreen'
-import { defaultTasks } from './TaskList.stories'
+import { PureInboxScreen } from './Inbox'
+import { defaultTasks } from '../molecules/tasks/TaskList.stories'
 
 // A super-simple mock of a redux store
 const store = {

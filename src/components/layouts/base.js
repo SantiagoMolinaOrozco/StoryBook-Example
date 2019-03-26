@@ -1,5 +1,5 @@
 /**
- * Layout component that queries for data
+ * Base component that queries for data
  * with Gatsby's StaticQuery component
  *
  * See: https://www.gatsbyjs.org/docs/static-query/
@@ -9,10 +9,10 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
-import './layout.css'
+import Header from '../molecules/header'
+import './base.css'
 
-const Layout = ({ children }) => (
+const Base = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -46,8 +46,8 @@ const Layout = ({ children }) => (
   />
 )
 
-Layout.propTypes = {
+Base.propTypes = {
   children: PropTypes.node.isRequired
 }
 
-export default Layout
+export default Base
